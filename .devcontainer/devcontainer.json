@@ -18,18 +18,6 @@
 	// connected. This is typically a file mount in .devcontainer/docker-compose.yml
 	"workspaceFolder": "/workspaces",
 
-	// Set *default* container specific settings.json values on container create.
-	"settings": {},
-
-	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		"mhutchie.git-graph",
-		"eamodio.gitlens",
-		"wingrunr21.vscode-ruby",
-		"rebornix.ruby",
-		"koichisasada.vscode-rdbg"
-	],
-
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
@@ -48,6 +36,14 @@
 	"customizations": {
 		"vscode": {
     		"settings": {
+				// Add the IDs of extensions you want installed when the container is created.
+				"extensions": [
+					"mhutchie.git-graph",
+					"eamodio.gitlens",
+					"wingrunr21.vscode-ruby",
+					"rebornix.ruby",
+					"koichisasada.vscode-rdbg"
+				],
     			"terminal.integrated.profiles.linux": {
 					"bash": {
 						"path": "/bin/bash"
