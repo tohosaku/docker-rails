@@ -10,7 +10,6 @@ RUN apt-get update -qq && apt-get install -y curl \
                                              postgresql-client \
                                              build-essential \
                                              libpq-dev
-WORKDIR /workspaces
 COPY entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/entrypoint.sh
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
